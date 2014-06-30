@@ -9,14 +9,14 @@ require "moj_internal_template/version"
 Gem::Specification.new do |s|
   s.name        = "moj_internal_template"
   s.version     = MojInternalTemplate::VERSION
-  s.authors     = ["Dom Smith"]
-  s.email       = ["dom.smith@digital.justice.gov.uk"]
-  s.homepage    = "https://github.com/ministryofjustice/moj_template"
-  s.summary     = "MOJ DS Template"
-  s.description = "Basic template for MOJ internal services"
+  s.authors     = ["Paul Battley"]
+  s.email       = ["paul.battley@digital.justice.gov.uk"]
+  s.homepage    = "https://github.com/ministryofjustice/moj_internal_emplate"
+  s.summary     = "MoJ internal template"
+  s.description = "Template for Ministry of Justice internal services"
   s.license     = "MIT"
 
-  s.files          = Dir["{app,lib}/**/*"] + ["LICENCE.txt"]
+  s.files          = Dir["{app,lib}/**/*"] + ["LICENCE.txt", "README.md"]
   s.require_paths  = ["lib"]
 
   s.add_dependency 'rails', '>= 3.1'
