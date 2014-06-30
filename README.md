@@ -13,6 +13,8 @@ in `moj_template` to extend this to build other formats for Django etc.
 Add to `Gemfile`:
 
 ```ruby
+gem 'govuk_template'
+gem 'govuk_frontend_toolkit'
 gem 'moj_internal_template',
   git: 'https://github.com/ministryofjustice/moj_internal_template.git'
 ```
