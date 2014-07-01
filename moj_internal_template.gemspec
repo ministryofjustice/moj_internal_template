@@ -19,9 +19,9 @@ Gem::Specification.new do |s|
   s.files          = Dir["{app,lib}/**/*"] + ["LICENCE.txt", "README.md"]
   s.require_paths  = ["lib"]
 
-  s.add_dependency 'rails', '>= 3.1'
+  s.add_dependency 'rails', '~> 4'
 
-  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rake', '~> 0'
   s.add_dependency 'govuk_template', '0.8.1'
   s.add_dependency 'govuk_frontend_toolkit', '1.3.0'
   s.add_development_dependency 'gem_publisher', '1.3.1'
