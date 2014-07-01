@@ -5,6 +5,9 @@ module MojInternalTemplate
       app.config.assets.precompile += %w(
         moj-internal*.css
         moj.js
+        *.woff
+        *.ttf
+        *.svg
       )
     end
   end
