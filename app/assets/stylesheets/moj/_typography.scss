@@ -6,10 +6,9 @@
 
 @import "fonts";
 
-#content {
+body {
   @include core-19;
   font-family: "Bliss2", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 // Text
