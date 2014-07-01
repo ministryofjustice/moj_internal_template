@@ -62,13 +62,13 @@ h2 {
 }
 
 h3 {
-  @include heading-27;
-  @include bold-27();
+  @include heading-24;
+  @include bold-24();
   font-family: inherit;
 }
 
 h3 {
-  @include heading-24;
-  @include bold-24();
+  @include heading-19;
+  @include bold-19();
   font-family: inherit;
 }
