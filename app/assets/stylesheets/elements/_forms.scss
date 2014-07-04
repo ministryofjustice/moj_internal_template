@@ -142,10 +142,19 @@ fieldset {
 .form-checkbox {
   display: block;
   margin: $gutter-half 0;
+  margin-bottom: 30px;
 }
 .form-checkbox input {
   vertical-align: middle;
   margin: -2px 5px 0 0;
+  width: 30px;
+  -webkit-appearance: checkbox;
+}
+.form-checkbox label {
+    display: inline;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 19px;
 }
 
 // Buttons
