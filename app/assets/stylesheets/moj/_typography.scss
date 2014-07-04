@@ -6,9 +6,18 @@
 
 @import "fonts";
 
+@mixin bliss() {
+  font-family: "Bliss2", Arial, sans-serif;
+}
+
 body {
   @include core-19;
-  font-family: "Bliss2", Arial, sans-serif;
+  @include bliss;
+}
+
+// override things that don't inherit their font
+.form-control, .form-label, .form-label-bold, #global-cookie-message p {
+  @include bliss;
 }
 
 // Text
