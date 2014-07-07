@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.version     = MojInternalTemplate::VERSION
   s.authors     = ["Paul Battley"]
   s.email       = ["paul.battley@digital.justice.gov.uk"]
-  s.homepage    = "https://github.com/ministryofjustice/moj_internal_emplate"
+  s.homepage    = "https://github.com/ministryofjustice/moj_internal_template"
   s.summary     = "MoJ internal template"
   s.description = "Template for Ministry of Justice internal services"
   s.license     = "MIT"
