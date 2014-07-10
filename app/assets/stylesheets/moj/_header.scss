@@ -2,8 +2,8 @@
 @import '_conditionals';
 @import '_measurements';
 
-$header-background-color: #f7f7ed;
-$header-foreground-color: $black;
+$header-background-color: black;
+$header-foreground-color: white;
 
 #global-header {
   background-color: $header-background-color;
@@ -11,6 +11,7 @@ $header-foreground-color: $black;
 
   .header-wrapper {
     background-color: $header-background-color;
+    color: $header-foreground-color;
     max-width: 990px;
     margin: 0 auto;
     padding-top: 8px;
@@ -45,6 +46,18 @@ $header-foreground-color: $black;
       .header-logo {
         margin: 5px 0 2px;
       }
+
+      .header-app-name {
+        float: left;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 0 15px;
+
+        @include media(desktop){
+          width: 33.33%;
+        }
+      }
     }
   }
 
@@ -57,7 +70,6 @@ $header-foreground-color: $black;
     overflow: visible;
     vertical-align: baseline;
 
-    color: $header-foreground-color;
     font-weight: bold;
     font-size: 30px;
     line-height: 1em;
@@ -68,10 +80,10 @@ $header-foreground-color: $black;
 
     img {
       position: relative;
-      top: -2px;
+      top: -5px;
 
-      width: 35px;
-      height: 31px;
+      width: 246px;
+      height: 36px;
 
       padding-right: 6px;
 
@@ -96,7 +108,7 @@ $header-foreground-color: $black;
   #log-in-out {
     font-size: 16px;
     float: right;
-    margin-top: 15px;
+    margin-top: 12px;
     margin-right: 15px;
 
     a {
@@ -117,8 +129,7 @@ $header-foreground-color: $black;
     @include inner-block;
   }
   .header-bar {
-    height: 10px;
-    background-color: $header-foreground-color;
+    height: 0px;
     @include ie-lte(8) {
       font-size: 0;
     }

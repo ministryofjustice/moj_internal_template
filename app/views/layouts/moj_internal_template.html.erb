@@ -64,10 +64,11 @@
       <div class="header-wrapper">
         <div class="header-global">
           <div class="header-logo">
-            <a href="/" title="Go to the homepage" id="logo" class="content">
-              <img src="<%= asset_path 'moj_logotype_crest.png' %>" width="61" height="50" alt="">
-              <%= content_for?(:app_name) ? yield(:app_name) : "Ministry of Justice" %>
-            </a>
+            <a href="/" title="Go to the homepage" id="logo" class="content"><img src="<%= asset_path 'moj_logo_horizontal_36x246.png' %>"
+                   width="36" height="246" alt="Ministry of Justice"></a>
+          </div>
+          <div class="header-app-name">
+            <%= config_item(:app_title) %>
           </div>
           <div id="log-in-out">
             <%= yield :log_in_out %>
