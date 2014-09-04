@@ -1,0 +1,14 @@
+<div class="inner-block">
+  <div class="phase-banner">
+    <p>
+    <strong class="phase-tag"><%= config_item(:phase).to_s.upcase %>:</strong>
+  <span>This is a new service -
+  <% if content_for?(:feedback_link) %>
+    <%= yield(:feedback_link) %>
+  <% else %>
+    <a href="<%= "#{config_item(:feedback_url)}" %>">your feedback</a>
+  <% end %>
+  will help us to improve it.</span>
+    </p>
+  </div>
+</div>
