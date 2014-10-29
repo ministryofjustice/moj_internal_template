@@ -64,8 +64,13 @@
       <div class="header-wrapper">
         <div class="header-global">
           <div class="header-logo">
-            <a href="/" title="Go to the homepage" id="logo" class="content"><img src="<%= asset_path 'moj_logo_horizontal_36x246.png' %>"
-                   width="36" height="246" alt="Ministry of Justice"></a>
+            <div id="logo">
+              <% if @disable_logo_link -%>
+                <%= logo_image %>
+              <% else -%>
+                <a href="/" title="Go to the homepage"><%= logo_image %></a>
+               <% end -%>
+            </div>
           </div>
           <div class="header-app-name">
             <%= config_item(:app_title) %>
