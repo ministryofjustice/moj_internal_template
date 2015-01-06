@@ -1,13 +1,6 @@
 // Typography
 // ==========================================================================
 
-// Increase the base font size to 19px
-// Using the core-19 mixin from the govuk_toolkit _typography.scss file
-
-body {
-  @include core-19;
-}
-
 // Text
 p {
   margin-top: em(5, 16 );
