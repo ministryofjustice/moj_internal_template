@@ -37,8 +37,11 @@
 // Phase banner
 // ==========================================================================
 
-.phase-banner  {
+.phase-banner-alpha  {
   @include phase-banner(alpha);
+}
+.phase-banner-beta  {
+  @include phase-banner(beta);
 }
 
 
