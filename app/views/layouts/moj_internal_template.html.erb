@@ -73,7 +73,7 @@
             </div>
           </div>
           <div class="header-app-name">
-            <%= config_item(:app_title) %>
+            <%= content_for?(:header_app_name) ? yield(:header_app_name) : config_item(:app_title) %>
           </div>
           <div id="log-in-out">
             <%= yield :log_in_out %>
