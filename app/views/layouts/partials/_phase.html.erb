@@ -1,7 +1,7 @@
 <div class="inner-block">
   <div class="phase-banner-<%= config_item(:phase).to_s.downcase %>">
     <p>
-    <strong class="phase-tag"><%= config_item(:phase).to_s.upcase %>:</strong>
+    <strong class="phase-tag"><%= config_item(:phase).to_s.upcase %></strong>
   <span>This is a new service -
   <% if content_for?(:feedback_link) %>
     <%= yield(:feedback_link) %>
